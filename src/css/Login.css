@@ -6,34 +6,28 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: royalblue;
+    background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));
     margin: 15px;
-    border: solid 20px gold;
+    border: solid 20px #1db954;
 }
 
 .login > h1, a {
     font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
     padding: 25px;
     font-size: 80px;
-    color: gold;
+    color: #1db954;
     text-decoration: none;
     text-shadow:
-    -2px -2px 0 lightyellow,  
-     2px -2px 0 lightyellow,
-     -2px 2px 0 lightyellow,
-      2px 2px 0 lightyellow;
+    -2px -2px 0 aliceblue,  
+     2px -2px 0 aliceblue,
+     -2px 2px 0 aliceblue,
+      2px 2px 0 aliceblue;
     max-height: 100vh;
     max-width: 100%;
- 
-    
+
 }
 
-/* .login > a {
-    padding: 20px;
-    border-radius: 99px;
-    font-weight: 600;
-    border: solid 2px lightyellow;
-    color: royalblue;
-    text-decoration: none;
-    background-color: aquamarine;
-} */
+a:hover {
+    font-size: 100px;
+}
+
