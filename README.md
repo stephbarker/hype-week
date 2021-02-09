@@ -1,6 +1,6 @@
 # HypeWeek
 
-An web app using the Spotify Web Api and Playback SDK that allows a user to listen to a fun weekly playlist that changes every Monday!
+A web app using the Spotify Web Api and Playback SDK that allows a user to listen to a fun weekly playlist that changes every Monday!
 
 \*\*Note: You must be a Spotify user to login, and you must have a premium account to access playback capabilities.
 
