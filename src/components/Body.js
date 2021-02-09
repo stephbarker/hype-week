@@ -2,14 +2,9 @@ import React from 'react';
 import SpotifyPlayer from 'react-spotify-web-playback';
 
 import "../css/Body.css";
-import SongRow from "./SongRow";
 import { useDataLayerValue } from "../DataLayer";
 
-import { PlayCircleFilled, Favorite, MoreHoriz } from "@material-ui/icons";
-import { getTokenFromUrl } from '../config/spotify';
-
-
-function Body({ spotify, token }) {
+function Body({ token }) {
     const [{ discover_weekly }, dispatch] = useDataLayerValue()
     // const playPlaylist = () => {
     //     dispatch({
