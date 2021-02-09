@@ -1,5 +1,5 @@
 export const authEndpoint = "https://accounts.spotify.com/authorize";
-const redirectUri = "http://localhost:3000/";
+const redirectUri = "https://hype-week.netlify.app/";
 const clientId = "b777c816ddfe4771a32d19dda18d10b2";
 
 const scopes = [
