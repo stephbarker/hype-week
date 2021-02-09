@@ -17,6 +17,10 @@ A web app using the Spotify Web Api and Playback SDK that allows a user to liste
 - Spotify Playback SDK
 - Google Fonts
 
+## Check It Out!
+
+[Click Here](https://hype-week.netlify.app/) to see the deployed app!
+
 ## Screenshots
 
 Coming soon!
