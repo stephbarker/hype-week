@@ -6,7 +6,8 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));
+    background-color: #0cbaba;
+    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
     margin: 15px;
     border: solid 20px mediumspringgreen;
 }
@@ -17,14 +18,9 @@
     font-size: 80px;
     color: mediumspringgreen;
     text-decoration: none;
-    text-shadow:
-    -2px -2px 0 aqua,  
-     2px -2px 0 aqua,
-     -2px 2px 0 aqua,
-      2px 2px 0 aqua;
+    text-shadow: 4px 4px 0 green;
     max-height: 100vh;
     max-width: 100%;
-
 }
 
 a:hover {
