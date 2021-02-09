@@ -1,4 +1,6 @@
 .body {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     width: 100%;
     color: white;
@@ -24,7 +26,6 @@
   }
   .body__info > img {
     height: 20vw;
-    margin: 0 20px;
     box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
   }
   .body__icons {
@@ -46,4 +47,10 @@
   }
   .body__songs {
     margin: 20px -30px;
+  }
+
+  .body-player {
+    display: flex;
+    padding: 20px;
+    margin-top: 50px;
   }

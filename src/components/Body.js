@@ -1,30 +1,32 @@
 import React from 'react';
+import SpotifyPlayer from 'react-spotify-web-playback';
 
 import "../css/Body.css";
 import SongRow from "./SongRow";
 import { useDataLayerValue } from "../DataLayer";
 
 import { PlayCircleFilled, Favorite, MoreHoriz } from "@material-ui/icons";
+import { getTokenFromUrl } from '../config/spotify';
 
 
-function Body({ spotify }) {
+function Body({ spotify, token }) {
     const [{ discover_weekly }, dispatch] = useDataLayerValue()
-    const playPlaylist = () => {
-        dispatch({
-            type: "SET_PLAYING",
-            playing: true,
-          })
-          dispatch({
-            type: "SET_PLAY_URI",
-            play_uri: "spotify:playlist:37i9dQZEVXcKjGV31cVGoB",
-          })
-          spotify.getMyCurrentPlayingTrack().then((r) => {
-            dispatch({
-              type: "SET_ITEM",
-              item: r.item,
-            })
-          })
-        }
+    // const playPlaylist = () => {
+    //     dispatch({
+    //         type: "SET_PLAYING",
+    //         playing: true,
+    //       })
+    //       dispatch({
+    //         type: "SET_PLAY_URI",
+    //         play_uri: "spotify:playlist:37i9dQZEVXcKjGV31cVGoB",
+    //       })
+    //       spotify.getMyCurrentPlayingTrack().then((r) => {
+    //         dispatch({
+    //           type: "SET_ITEM",
+    //           item: r.item,
+    //         })
+    //       })
+    //     }
 
     return (
         <div className="body">
@@ -36,16 +38,38 @@ function Body({ spotify }) {
                     <p>{discover_weekly?.description}</p>
                 </div>
             </div>
-            <div className="body__songs">
-                <div className="body__icons">
+            <div className="body-player">
+            <SpotifyPlayer className="spotify-player"
+                token={token}
+                showSaveIcon={true}
+                uris={["spotify:playlist:37i9dQZEVXcKjGV31cVGoB"]}
+                magnifySliderOnHover={true}
+                autoPlay={true}
+                styles={{
+                  height: 100,
+                  activeColor: '#fff',
+                  bgColor: 'linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));',
+                  color: 'aqua',
+                  loaderColor: 'linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));',
+                  sliderTrackColor: 'linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));',
+                  sliderColor: 'aqua',
+                  trackArtistColor: '#ccc',
+                  trackNameColor: '#fff',
+                  sliderHeight: 10,
+                  sliderHandleColor: 'white',
+                }}
+              />
+              </div>
+                {/* <div className="body__icons">
                     <PlayCircleFilled className="body__shuffle" onClick={playPlaylist} />
                     <Favorite fontSize="large" />
                     <MoreHoriz />
-                </div>
+                </div> */}
+                {/* <div className="body__songs">
                 {discover_weekly?.tracks.items.map((item) => (
                     <SongRow track={item.track} />
                 ))}
-                 </div>    
+                 </div>     */}
             </div>
     );
 }
