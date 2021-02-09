@@ -5,7 +5,7 @@ import "../css/Body.css";
 import { useDataLayerValue } from "../DataLayer";
 
 function Body({ token }) {
-    const [{ discover_weekly }, dispatch] = useDataLayerValue()
+    const [{ discover_weekly }] = useDataLayerValue()
     // const playPlaylist = () => {
     //     dispatch({
     //         type: "SET_PLAYING",
