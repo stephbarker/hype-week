@@ -46,7 +46,7 @@ function Body({ token }) {
                   color: 'aqua',
                   loaderColor: 'linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));',
                   sliderTrackColor: 'linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));',
-                  sliderColor: 'aqua',
+                  sliderColor: 'mediumspringgreen',
                   trackArtistColor: '#ccc',
                   trackNameColor: '#fff',
                   sliderHeight: 10,
