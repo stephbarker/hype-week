@@ -31,10 +31,9 @@ function Body({ spotify, token }) {
     return (
         <div className="body">
             <div className="body_info">
-                <img src={discover_weekly?.images[0]?.url} alt="" />
+                <img className='img' src={discover_weekly?.images[0]?.url} alt="" />
                 <div className="body__infoText">
-                    <strong>PLAYLIST</strong>
-                    <h2>Discover Weekly</h2>
+                    <h2> Hear Your Hype Week!</h2>
                     <p>{discover_weekly?.description}</p>
                 </div>
             </div>

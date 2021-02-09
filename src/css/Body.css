@@ -1,34 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
 .body {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
     width: 100%;
     color: white;
     padding: 30px;
     background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));
     overflow-y: overlay;
+    
   }
   .body::-webkit-scrollbar {
     display: none;
   }
   .body__info {
-    padding: 10px;
+    padding: 20px;
   }
+
   .body__infoText {
-    flex: 1;
+    font-family: 'Bebas Neue', sans-serif;
+    /* flex: 1; */
+    justify-content: center;
+    align-items: center;
   }
   .body__infoText > h2 {
-    font-size: 48px;
-    margin-bottom: 10px;
+    font-size: 65px;
+    padding: 15px;
+    text-align: center;
+    color: mediumspringgreen;
   }
   .body__infoText > p {
-    font-size: 14px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline aqua;
   }
-  .body__info > img {
-    height: 20vw;
-    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+ 
+  .img {
+    display: flex;
+    height: 30vw;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: auto;
+    margin-top: 5px;
+    border: solid 4px aqua;
   }
-  .body__icons {
+  /* .body__icons {
     display: flex;
     align-items: center;
   }
@@ -47,10 +68,12 @@
   }
   .body__songs {
     margin: 20px -30px;
-  }
+  } */
 
   .body-player {
     display: flex;
-    padding: 20px;
+    padding: 3px;
+    margin: 20;
     margin-top: 50px;
+    width: 80%;
   }

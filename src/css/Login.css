@@ -8,20 +8,20 @@
     height: 100vh;
     background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));
     margin: 15px;
-    border: solid 20px #1db954;
+    border: solid 20px mediumspringgreen;
 }
 
 .login > h1, a {
     font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
     padding: 25px;
     font-size: 80px;
-    color: #1db954;
+    color: mediumspringgreen;
     text-decoration: none;
     text-shadow:
-    -2px -2px 0 aliceblue,  
-     2px -2px 0 aliceblue,
-     -2px 2px 0 aliceblue,
-      2px 2px 0 aliceblue;
+    -2px -2px 0 aqua,  
+     2px -2px 0 aqua,
+     -2px 2px 0 aqua,
+      2px 2px 0 aqua;
     max-height: 100vh;
     max-width: 100%;
 
